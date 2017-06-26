@@ -4,7 +4,7 @@
   "description": "nedb database ready over network",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node exemple/index.js",
     "build": "babel src/ -d dist/"
   },
   "repository": {
