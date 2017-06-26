@@ -1,0 +1,41 @@
+{
+  "name": "nedb-network",
+  "version": "1.0.0",
+  "description": "nedb database ready over network",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunik/nedb-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lunik/nedb-network/issues"
+  },
+  "homepage": "https://github.com/Lunik/nedb-network#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "nedb": "^1.8.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
