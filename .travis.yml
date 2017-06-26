@@ -1,25 +1,20 @@
 notifications:
   email: false
-
 language: node_js
-
 node_js:
 - '7'
 - '6'
 - '5'
-
 script:
 - npm run build
-
 cache:
   directories:
-  - "$(pwd)/node_modules"
-  - "$(pwd)/src/public/src/bower_components"
-
+  - $(pwd)/node_modules
+  - $(pwd)/src/public/src/bower_components
 deploy:
   provider: npm
   email: guillaume.lunik@gmail.com
   on:
     tags: true
   api_key:
-    secure: TDsu3+bhCoCpCLovZHSco71BlGWL4jHdKu/GlMsqKcy8ZADK+7XO+qVJPst5MR/OG0QgjKa9meClBqaHaSJaGjDTyf+2xn/NqnBF7tZTW7XW39G6TMlkchQFsb2tso+cIZHG5I72SwY67vnwwcdbozgJB4moHEPTLC64VvA+wndCuN7+YsMmbrSwZeTjxgj4PCyRSTghcfOqCU8gDQiI+Hr+75H44GlWQyTM9565s+9B74i3IZMGrdR002MMHC8+VDg1LEAZABwTX86yp/WYNHfu3/nOz+JB9J3zE7lbiSeedLuzX4iw5FlOGWnEIJcuozcF7NOKmP9EtV70KL+vG9SrxivYgXpdH/Cv3NJlmIvKNbqAoqPAviaRikuKyQ9pJGQa02h/i7hWvXssxO4KiP3c2v4r3qba1ZDDb6gE16WViHXQmPmq9aWmjHBK6YJXEfDg8c0FQ40BBQ5q8mXhk2Sk4hDBWoaUtJ/ZTQV8gI/UK6A+YA3gWEoCZigszlKKfBg12EqgyDsjN5xQmXDnTAX9a9wWJk+3rQNZ1a8IpKc/Tsy/osQ9zfdNwngMuIdasBSm2TwTBVc32EpdcXqDfH8fgiqiNOxnWGIYZP3kU+kLZvgMJsDmOsi4uMA185lx6jiHmfJUDnigsAQeI6A+tuNHCrC+NEabid1ErJfPU4M=
+    secure: s+vjQbZEiHLyUgeHoUAJ4PsMT3u3UYoNhRo5Gkav528JzUZsHqdw9JMK2adDcU3ZKxpdZSMSTriadynPaQF0bEZGDRSa6wYuSCZj/9wXEgky5HFmuiZSQgluUgoBwngkf1oJz9aHxg83DGWYSLJKA9s4PBTVFhjxPhAyeL+a9UJk2v/bP4YXsx9DWuh3TbKBDKLPIh0G3uP9xvb/HbU47AUkgqcQg9Iu+i9MxNGujY1sRgvBMS9/pLMKEJR7TwidUOJMe+BMnpG6vUyozT1ayn49snw8zdksjuA3toD0qYIpd688do3d+e5P7mlM5f89A/kDsRsvfVblGz3hMXGTxtZvLr/JLdHESbk4tynDfWDXV9SXPVZ6crD3q+e7mvJh2OVJnJcStOsQVCwgSxamAeCVIHVZtViRhvFkOPr9sAnZgyTrmpi+TKjMjl3JmyUM2Im3QpbEIf5xDNe6JyFyx1h3MDkmjZq+M+U5tk0pJRh1GazYiLeo69boFgfVz0X11CgQKaAL+3R6lIISO6F4UZJ9kjZTheyU/yyQRFJIA9JIxLBXR2RbNErWs8RzRrXdwE2sosHL1elBvH5kzg4rzqg5csISPG5Qt37k8cENxcYe4pjsxYsJSVDdW1XyXLLzJhWTQMbsdTvbMJcIG2ipyq3+ZahWOkZxwU75hYz+l1c=
