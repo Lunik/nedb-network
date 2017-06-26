@@ -1,6 +1,6 @@
 {
   "name": "nedb-network",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "nedb database ready over network",
   "main": "dist/index.js",
   "scripts": {
