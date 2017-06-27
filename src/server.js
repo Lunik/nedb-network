@@ -13,9 +13,10 @@ function parseJSON (json) {
 }
 
 export default class Server {
-  constructor (port, token) {
+  constructor (port, token, path) {
     this.token = token
     this.databases = {}
+    this.path = path || 'data/'
 
     this.app = express()
     this.app.use(compression())
@@ -100,7 +101,7 @@ export default class Server {
 
   loadDB (db, cb) {
     if (this.databases[db] == null) {
-      this.databases[db] = new Datastore({ filename: `data/${db}.db` })
+      this.databases[db] = new Datastore({ filename: `${this.path}/${db}.db` })
       this.databases[db].loadDatabase(cb)
       this.databases[db].persistence.compactDatafile()
     } else {

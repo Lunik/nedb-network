@@ -6,7 +6,7 @@ var Database = require('../dist/index')
 
 const Token = 'MON_TOKEN'
 
-var server = new Database.Server(8080, Token)
+var server = new Database.Server(8080, Token, '/tmp')
 
 var client = new Database.Client('ma_db', 'localhost', 8080, Token)
 
